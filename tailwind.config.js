@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,11 +10,11 @@ module.exports = {
       colors: {
         customBlues: '#6474ff',
         customBlue: 'rgba(30, 144, 255, 0.6)',
-        primarycolor:"#323232",
+        primarycolor: "#323232",
         customgray: '#E7E9E9',
         background: "var(--background)",
         foreground: "var(--foreground)",
-        bordercolor:"hsla(0,0%,100%,.6)",
+        bordercolor: "hsla(0,0%,100%,.6)",
       },
       gradientColorStops: {
         customBlue: '#6474ff',
@@ -25,7 +25,7 @@ module.exports = {
       fontSize: {
         'custom-5px': '0.3125rem',
         'custom-10px': '0.625rem',
-        'custom-12.5px':'0.78125rem',
+        'custom-12.5px': '0.78125rem',
         'custom-15px': '0.9375rem',
         'custom-20px': '1.25rem',
         'custom-30px': '1.875rem',
@@ -51,3 +51,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default config;
